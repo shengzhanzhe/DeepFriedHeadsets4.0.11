@@ -14,7 +14,7 @@
     "CompressorRelease": 1.0,
 
     "___COMPRESSOR_SEND_LEVELS___": "===================",
-    "AmbientCompressorSendLevel": 0.125,
+    "AmbientCompressorSendLevel": 2,
     "ClientPlayerCompressorSendLevelSet": 2,
     "PlayerCompressorSendLevel": 2,
     "GunsCompressorSendLevelAdd": 2,
