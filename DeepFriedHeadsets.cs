@@ -45,7 +45,7 @@ public class HeadsetConfig
     public double CompressorRelease { get; set; } = 1.0;
 
     // Compressor send levels
-    public double AmbientCompressorSendLevelAdd { get; set; } = -5;
+    public double AmbientCompressorSendLevel { get; set; } = 1.0;
     public double ClientPlayerCompressorSendLevelSet { get; set; } = 6;
     public double PlayerCompressorSendLevel { get; set; } = 12;
     public double GunsCompressorSendLevelAdd { get; set; } = 12;
@@ -131,7 +131,7 @@ public class DeepFriedHeadsetsMod(
                 }
                 if (p.AmbientCompressorSendLevel.HasValue)
                 {
-                    p.AmbientCompressorSendLevel = p.AmbientCompressorSendLevel.Value + cfg.AmbientCompressorSendLevelAdd;
+                    p.AmbientCompressorSendLevel = p.AmbientCompressorSendLevel.Value * cfg.AmbientCompressorSendLevel;
                 }
                 if (p.GunsCompressorSendLevel.HasValue)
                 {
