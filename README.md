@@ -26,7 +26,7 @@ Edit `config/config.json` to adjust headset audio settings.
 All values are **multipliers** unless noted with `Add` (additive) or `Set` (direct set).
 
 ### Volume Controls
-- **AmbientVolume**: Multiplier for ambient noise reduction. Server's AmbientVolume is multiplied by this value. Most headsets have negative values (e.g., -50), so increasing this multiplier increases ambient noise reduction.
+- **AmbientVolume**: Multiplier for ambient noise reduction. Server's AmbientVolume is multiplied by this value. Most headsets have negative values (e.g., -50), so increasing this multiplier increases ambient noise reduction. However, If you want to reduce ambient sound, increase AmbientCompressorSendLevel instead.
 - **HeadphonesMixerVolume**: Overall headset volume multiplier. Higher values = louder output.
 - **DryVolume**: Multiplier for unprocessed (dry) audio signal. This determines how much "outside" sound is mixed to the headset's processed sound.
 - **EffectsReturnsGroupVolumeSet**: This is the volume of sound effects (echo, reverb etc). Some ambient and wilderness effects in game use these effects.
